@@ -27,9 +27,9 @@ function Contact() {
   });
   return (
     <div className=" hero flex justify-center grid grid-rows-4 ">
-      <h1 className="headtext text-6xl uppercase font-black pt-10">Contact</h1>
+      <h1 className="headtext text-5xl font-black pt-14">👇🏼 Contact Me 👇🏼</h1>
       <a href="https://www.facebook.com/prasert.sangkaew.18/" target="_blank">
-        <div className="animate-bounce facebook mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-blue-200 hover:bg-blue-400 cursor-pointer">
+        <div className="border-solid border-4 border-blue-500 animate-bounce facebook mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-blue-200 hover:bg-blue-400 cursor-pointer">
           <h1>FACEBOOK</h1>{" "}
           <img
             src="../images/f_logo.png"
@@ -39,7 +39,7 @@ function Contact() {
           />
         </div>
       </a>
-      <div className="animate-bounce line mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-green-200 hover:bg-green-400">
+      <div className="border-solid border-4 border-green-500 animate-bounce line mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-green-200 hover:bg-green-400">
         <h1>LINE : kengserch.</h1>{" "}
         <img
           src="../images/l_logo.png"
@@ -50,7 +50,7 @@ function Contact() {
       </div>
   
       <a href="https://www.instagram.com/kengserch/" target="_blank">
-      <div className="animate-bounce instagram mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-red-200 hover:bg-red-400 cursor-pointer">
+      <div className="border-solid border-4 border-red-500 animate-bounce instagram mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-red-200 hover:bg-red-400 cursor-pointer">
         <h1>INSTRAGRAM</h1>{" "}
         <img
           src="../images/i_logo.png"

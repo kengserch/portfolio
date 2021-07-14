@@ -45,7 +45,7 @@ function Home() {
         </h1>
         <Link
           to="/project"
-          className="mt-20 py-7 px-7 bg-red-400 rounded-full text-xl hover:bg-red-500 transition 
+          className="shadow-lg mt-20 py-7 px-7 bg-red-400 rounded-full text-xl hover:bg-red-500 transition 
    duration-300 ease-in-out flex items-center animate-bounce"
         >
           {" "}

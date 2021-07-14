@@ -33,14 +33,18 @@ function About() {
   return (
     <div class=" hero grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mx-14 my-28">
       <div >
-        <img className=" image sm:w-10/12 sm:max-h-full ml-4 lg:w-10/12 rounded-full " src="../images/profile-about.jpg" alt="profile"/>
+        <img className="shadow-lg image sm:w-10/12 sm:max-h-full ml-4 lg:w-10/12 rounded-full " src="../images/profile-about.jpg" alt="profile"/>
       </div>
       <div>
-        <h1 className=" headtext mb-14 sm:text-1xl sm:mt-2 text-6xl uppercase font-black">About Me</h1>
+        <h1 className=" headtext mb-14 sm:text-1xl sm:mt-2 text-6xl uppercase font-black">About Me 👋🏼</h1>
         <h1 className=" subhead text-3xl font-black my-8">
-          I'm a UI Designer and Front End Developer from Thailand
+          I'm a UI Designer and Front End Developer from Thailand.
+          My name is Prasert Saengkaew 
         </h1>
-        <h1 className="detail text-2xl font-black">
+        <h1 className=" subhead text-2xl font-black my-8">
+          My name : Prasert Saengkaew &nbsp; Nickname : Keng &nbsp; Age : 22
+        </h1>
+        <h1 className="detail text-2xl">
           I enjoy turning complex problems into simple, beautiful and intuitive
           designs. I was excited when I built my own website.
         </h1>
