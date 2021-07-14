@@ -51,7 +51,7 @@ function Contact() {
   
       <a href="https://www.instagram.com/kengserch/" target="_blank">
       <div className="border-solid border-4 border-red-500 animate-bounce instagram mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-red-200 hover:bg-red-400 cursor-pointer">
-        <h1>INSTRAGRAM</h1>{" "}
+        <h1>INSTAGRAM</h1>{" "}
         <img
           src="../images/i_logo.png"
           alt="i-logo"
