@@ -22,7 +22,7 @@ function Home() {
         <img src="../images/profilecolor1.png" alt="profile"/>
       </div>
 
-      <div className=" text sm:pt-80 xl:pt-96  flex flex-col justify-center items-center  relative  ">
+      <div className=" pt-56 text sm:pt-80 xl:pt-96  flex flex-col justify-center items-center  relative  ">
         <h1
           className="sm:text-1xl  md:text-2xl lg:text-3xl text-1xl
      font-normal"
@@ -33,7 +33,7 @@ function Home() {
           ></Typical>
         </h1>
         <h1
-          className="sm:text-4xl md:text-6xl lg:text-7xl text-8xl
+          className="sm:text-4xl md:text-6xl lg:text-7xl text-4xl
     font-medium "
         >
           I'm a{" "}

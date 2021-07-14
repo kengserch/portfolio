@@ -33,7 +33,7 @@ function About() {
   return (
     <div class=" hero font-mono  grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mx-14 my-28">
       <div >
-        <img className=" image sm:w-10/12 sm:max-h-full ml-12 lg:w-10/12 rounded-full " src="../images/profile-about.jpg" alt="profile"/>
+        <img className=" image sm:w-10/12 sm:max-h-full ml-4 lg:w-10/12 rounded-full " src="../images/profile-about.jpg" alt="profile"/>
       </div>
       <div>
         <h1 className=" headtext mb-14 sm:text-1xl sm:mt-2 text-6xl uppercase font-black">About Me</h1>
