@@ -12,11 +12,11 @@ function Project() {
 
  return (
   <>
-  <div className=" hero shadow-lg font-mono ">
+  <div className=" hero shadow-lg ">
   <div className="text flex justify-center"> <h1 className="mx-20 mt-10 text-3xl  ">Graphic Design</h1></div>
   <ContentComponent thumbnailUrl1="/images/graphic1.jpg" thumbnailUrl2="/images/graphic2.jpg"/>
   
-  <div className="flex justify-center"> <h1 className="mx-20 mt-10 text-3xl">3d</h1></div>
+  <div className="flex justify-center"> <h1 className="mx-20 mt-10 text-3xl">3D</h1></div>
   <ContentComponent thumbnailUrl1="/images/3d1.jpg" thumbnailUrl2="/images/3d2.jpg"/>
 
   <div className="flex justify-center"> <h1 className="mx-20 mt-10 text-3xl">Web Design</h1></div>

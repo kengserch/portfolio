@@ -17,14 +17,14 @@ function Home() {
   })
     return (
       
-      <div className=" z-1 hero" >
+      <div className=" z-1 hero " >
       <div className=" sm:h-screen md:h-screen lg:h-screen  xl:h-screen 2xl:h-screen flex justify-center absolute opacity-40 w-auto ">
         <img src="../images/profilecolor1.png" alt="profile"/>
       </div>
 
       <div className=" pt-56 text sm:pt-80 xl:pt-96  flex flex-col justify-center items-center  relative  ">
         <h1
-          className="sm:text-1xl  md:text-2xl lg:text-3xl text-1xl
+          className="base-font sm:text-1xl  md:text-2xl lg:text-3xl text-1xl
      font-normal"
         >
           <Typical
@@ -40,7 +40,7 @@ function Home() {
           <Typical 
             loop={Infinity}
             wrapper="b"
-            steps={["Web Developer💻", 4000, "Web Design🖌", 4000]}
+            steps={["Web Developer💻", 4000, "Web Design 🖌", 4000]}
           ></Typical>
         </h1>
         <Link
@@ -49,7 +49,7 @@ function Home() {
    duration-300 ease-in-out flex items-center animate-bounce"
         >
           {" "}
-          View Project{" "}
+          <h1>View Project</h1>{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7 ml-4"
