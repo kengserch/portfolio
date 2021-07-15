@@ -1,6 +1,91 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import "../components/Main.css";
+import "../components/Main.css"; 
+import styled from "styled-components";
+import tw from "twin.macro";
+
+const ContactContainer = styled.div`
+  ${tw`
+    flex 
+    justify-center 
+    grid 
+    grid-rows-4
+  `}
+  visibility: hidden;
+`;
+
+const HeadText = styled.h1`
+  ${tw`
+    text-5xl 
+    font-black 
+    pt-14 
+  `}
+`;
+
+const FaceContainer = styled.div`
+  ${tw`
+    border-solid 
+    border-4 
+    border-blue-500 
+    animate-bounce 
+    mt-12 
+    w-full 
+    h-24 
+    backdrop-opacity-40 
+    text-2xl 
+    rounded-full 
+    font-bold 
+    text-center 
+    py-8 
+    bg-blue-200 
+    hover:bg-blue-400 
+    hover:cursor-pointer
+  `}
+`;
+
+const LineContainer = styled.div`
+  ${tw`
+    border-solid 
+    border-4 
+    border-green-500 
+    animate-bounce 
+    mt-12 
+    w-full 
+    h-24 
+    backdrop-opacity-40 
+    text-2xl 
+    rounded-full 
+    font-bold 
+    text-center 
+    py-8 
+    bg-green-200 
+    hover:bg-green-400
+  `}
+`;
+
+const InContainer = styled.div`
+  ${tw`
+    border-solid 
+    border-4 
+    border-red-500 
+    animate-bounce 
+    mt-12 
+    w-full 
+    h-24 
+    backdrop-opacity-40 
+    text-2xl 
+    rounded-full 
+    font-bold 
+    text-center 
+    py-8 
+    bg-red-200 
+    hover:bg-red-400 
+    cursor-pointer
+  `}
+`;
+
+
+
 function Contact() {
   useEffect(() => {
     gsap.set(".hero", { visibility: "visible" });
@@ -26,10 +111,10 @@ function Contact() {
     );
   });
   return (
-    <div className=" hero flex justify-center grid grid-rows-4 ">
-      <h1 className="headtext text-5xl font-black pt-14">👇🏼 Contact Me 👇🏼</h1>
-      <a href="https://www.facebook.com/prasert.sangkaew.18/" target="_blank">
-        <div className="border-solid border-4 border-blue-500 animate-bounce facebook mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-blue-200 hover:bg-blue-400 cursor-pointer">
+    <ContactContainer className="hero">
+      <HeadText className="headtext">👇🏼 Contact Me 👇🏼</HeadText>
+      <a href="https://www.facebook.com/prasert.sangkaew.18/" target="_blank" rel="noreferrer">
+        <FaceContainer className="facebook">
           <h1>FACEBOOK</h1>{" "}
           <img
             src="../images/f_logo.png"
@@ -37,9 +122,9 @@ function Contact() {
             width="50px"
             height="50px"
           />
-        </div>
+        </FaceContainer>
       </a>
-      <div className="border-solid border-4 border-green-500 animate-bounce line mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-green-200 hover:bg-green-400">
+      <LineContainer className="line">
         <h1>LINE : kengserch.</h1>{" "}
         <img
           src="../images/l_logo.png"
@@ -47,10 +132,10 @@ function Contact() {
           width="70px"
           height="70px"
         />
-      </div>
+      </LineContainer>
   
-      <a href="https://www.instagram.com/kengserch/" target="_blank">
-      <div className="border-solid border-4 border-red-500 animate-bounce instagram mt-12 w-full h-24 backdrop-opacity-40 text-2xl rounded-full font-bold text-center py-8 bg-red-200 hover:bg-red-400 cursor-pointer">
+      <a href="https://www.instagram.com/kengserch/" target="_blank" rel="noreferrer">
+      <InContainer>
         <h1>INSTAGRAM</h1>{" "}
         <img
           src="../images/i_logo.png"
@@ -58,9 +143,10 @@ function Contact() {
           width="50px"
           height="50px"
         />
-      </div>
+      </InContainer>
       </a>
-    </div>
+    
+    </ContactContainer>
   );
 }
 

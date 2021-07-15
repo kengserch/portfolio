@@ -3,9 +3,7 @@ import HomeComponent from "../components/Home";
 
 function home() {
   return (
-    
       <HomeComponent />
-    
   );
 }
 

@@ -1,48 +1,95 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
+import "./Main.css";
+import styled from "styled-components";
+import tw from "twin.macro";
 
-import './Main.css'
+const HomeContainer = styled.div`
+  visibility: hidden;
+`;
+
+const ImageContainer = styled.div`
+  ${tw`
+   sm:h-screen 
+   md:h-screen 
+   lg:h-screen  
+   xl:h-screen 
+   2xl:h-screen 
+   flex 
+   justify-center 
+   absolute 
+   opacity-40 
+   w-auto 
+  `}
+`;
+
+const TextContainer = styled.div`
+  ${tw`
+   pt-56  
+   sm:pt-80 
+   xl:pt-96  
+   flex 
+   flex-col 
+   justify-center 
+   items-center  
+   relative  
+  `}
+`;
+
+const MyName = styled.h1`
+  ${tw`
+   text-xl
+   sm:text-xl  
+   md:text-2xl 
+   lg:text-3xl 
+   font-normal
+  `}
+`;
+
+const MyJob = styled.h1`
+  ${tw`
+   sm:text-4xl 
+   md:text-6xl 
+   lg:text-7xl 
+   text-4xl
+   font-medium
+  `}
+`;
 
 function Home() {
-  
-
   useEffect(() => {
-    gsap.set(".hero", {visibility: 'visible'});
-    gsap.from(".hero", {y: 1280, duration: 1.2 , ease: "easeOut"})
-    gsap.from(".hero", {scale: 0.8 ,duration: 2,delay: 0.1 , ease: "easeOut"});
-    gsap.from(".text", {y: 1280,duration: 1.5 , ease: "easeOut"}); 
-
-  })
-    return (
-      
-      <div className=" z-1 hero " >
-      <div className=" sm:h-screen md:h-screen lg:h-screen  xl:h-screen 2xl:h-screen flex justify-center absolute opacity-40 w-auto ">
-        <img src="../images/profilecolor1.png" alt="profile"/>
-      </div>
-
-      <div className=" pt-56 text sm:pt-80 xl:pt-96  flex flex-col justify-center items-center  relative  ">
-        <h1
-          className="base-font sm:text-1xl  md:text-2xl lg:text-3xl text-1xl
-     font-normal"
-        >
+    gsap.set(".hero", { visibility: "visible" });
+    gsap.from(".hero", { y: 1280, duration: 1.2, ease: "easeOut" });
+    gsap.from(".hero", {
+      scale: 0.8,
+      duration: 2,
+      delay: 0.1,
+      ease: "easeOut",
+    });
+    gsap.from(".text", { y: 1280, duration: 1.5, ease: "easeOut" });
+  });
+  return (
+    <HomeContainer className="hero">
+      <ImageContainer>
+        <img src="../images/profilecolor1.png" alt="profile" />
+      </ImageContainer>
+      <TextContainer>
+        <MyName>
           <Typical
             steps={["Hi, I'm Prasert Saengkaew", 2000]}
             wrapper="b"
           ></Typical>
-        </h1>
-        <h1
-          className="sm:text-4xl md:text-6xl lg:text-7xl text-4xl
-    font-medium "
-        >
+        </MyName>
+        <MyJob>
           I'm a{" "}
-          <Typical 
+          <Typical
             loop={Infinity}
             wrapper="b"
             steps={["Web Developer💻", 4000, "Web Design 🖌", 4000]}
           ></Typical>
-        </h1>
+        </MyJob>
         <Link
           to="/project"
           className="shadow-lg mt-20 py-7 px-7 bg-red-400 rounded-full text-xl hover:bg-red-500 transition 
@@ -67,9 +114,9 @@ function Home() {
             />
           </svg>
         </Link>
-      </div>
-    </div>
-    )
+      </TextContainer>
+    </HomeContainer>
+  );
 }
 
-export default Home
+export default Home;
