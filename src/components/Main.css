@@ -1,21 +1,7 @@
-/* .bg-home {
-  background-image: url('../images/circle-scatter.png');
-  background-position: center;
-} */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 h1 , link{
   font-family: 'Ubuntu', sans-serif;
 }
 
-.hero {
-  visibility: hidden;
-}
-
-/* .card {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-} */

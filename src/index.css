@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrapper{
- @apply flex flex-col justify-center items-center justify-center mx-20 my-20;
-}
