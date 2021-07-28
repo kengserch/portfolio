@@ -12,16 +12,12 @@ const HomeContainer = styled.div`
 
 const ImageContainer = styled.div`
   ${tw`
-   sm:h-screen 
-   md:h-screen 
-   lg:h-screen  
-   xl:h-screen 
-   2xl:h-screen 
+   h-auto
    flex 
    justify-center 
    absolute 
    opacity-40 
-   w-auto 
+   w-full
   `}
 `;
 
@@ -73,7 +69,7 @@ function Home() {
   return (
     <HomeContainer className="hero">
       <ImageContainer>
-        <img src="../images/profilecolor1.png" alt="profile" />
+        <img src="../images/profilecolor1.png" alt="profile" width="1000px" height="1000px" />
       </ImageContainer>
       <TextContainer>
         <MyName>
