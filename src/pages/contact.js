@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import "../components/Main.css"; 
+import "../components/Main.css";
 import styled from "styled-components";
 import tw from "twin.macro";
+
 
 const ContactContainer = styled.div`
   ${tw`
@@ -125,7 +126,8 @@ function Contact() {
         </FaceContainer>
       </a>
       <LineContainer className="line">
-        <h1>LINE : kengserch.</h1>{" "}
+      <i class="fi fi-rr-Address-book"></i>
+        <h1>  LINE : kengserch</h1>{" "}
         <img
           src="../images/l_logo.png"
           alt="l-logo"
